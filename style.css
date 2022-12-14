@@ -1,0 +1,94 @@
+#player{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    padding: 25px 10px 25px 10px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: inset;
+}
+
+#play{
+    background: transparent;
+    font-family: cursive;
+    color: white;
+    border: dotted;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#next, #prev{
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#next{
+    border: outset;
+}
+
+#controls{
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+}
+
+/* details style */
+
+#music-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+#thumbnail{
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+#root{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+#min-controls{
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#repeat, #shuffle{
+    height: 30px;
+    margin: 5px;
+    width: 30px;
+    font-size: 12px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: transparent;
+}
+
+#next img, #prev img, #play img, #repeat img{
+    width: 15px;
+}
+
+#next, #prev, #play, #repeat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
